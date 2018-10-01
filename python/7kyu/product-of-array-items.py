@@ -3,10 +3,12 @@ Calculate the product of all elements in an array.
 
 If the array is empty or None, return None.
 '''
-import unittest, functools, operator
+import unittest
+from operator import mul
+from functools import reduce
 
 def product(numbers):
-    return None if numbers is None or numbers == [] else functools.reduce(operator.mul, numbers, 1)
+    return reduce(mul, numbers) if numbers else None
 
 class ProductTest(unittest.TestCase):
     def test(self):
