@@ -7,4 +7,4 @@ Languages:
 * Javascript
 * Ruby
 <br>
-![Java image](./images/java.png)![Python image](./images/python.png)![Node Image](./images/node.png)![Ruby Image](./images/ruby.png)
+![Java image](./images/java.png) ![Python image](./images/python.png) ![Node Image](./images/node.png) ![Ruby Image](./images/ruby.png)
