@@ -32,17 +32,9 @@ package fivekyu;
 public class DoubleCola {
 
     public String whoIsNext(String[] names, int n) {
-        String person = new String();
-        if (n < names.length - 1) {
-            person = names[n - 1];
-        } else {
-            int i = 1;
-            while (i * 5 < n) {
-                n -= i * names.length;
-                i *= 2;
-            }
-            person = names[(n - 1) / i];
+        while (n > names.length) {
+            n = (n - (names.length - 1)) / 2;
         }
-        return person;
+        return names[n - 1];
     }
 }
